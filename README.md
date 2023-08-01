@@ -22,8 +22,8 @@
 | category_2 | Category ID (Bigint). 类别ID |
 | category_1 | Root category ID (Bigint). 根类别ID |
 | buy_mount | Purchase quantity (Bigint). 采购量 |
-| day | Timestamp. |  
-
+| day | Timestamp. |    
+  
 3. 分析方向  
 +什么商品类别销量最佳？  
 +用户为之购买商品的婴儿年龄、性别分布？  
