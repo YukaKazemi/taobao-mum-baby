@@ -93,12 +93,13 @@ tample.to_csv(r'../data/new_trade_history.csv')
 1. 消费者行为分析
    ``` python
    # 消费者行为分析
-print(mum_baby_trade_history.groupby('category_1').sum())  # 查看根类别category_1 #[6 rows x 7 columns]
-result1 = pd.pivot_table(mum_baby_trade_history, index='category_1', values='buy_mount', aggfunc=np.sum)
-plt.figure(figsize=(7, 5))
-plt.bar(x=['28', '38', '50008168', '50014815', '50022520', '122650008'],
+   print(mum_baby_trade_history.groupby('category_1').sum())  # 查看根类别category_1 #[6 rows x 7 columns]
+   result1 = pd.pivot_table(mum_baby_trade_history, index='category_1', values='buy_mount', aggfunc=np.sum)
+   plt.figure(figsize=(7, 5))
+   plt.bar(x=['28', '38', '50008168', '50014815', '50022520', '122650008'],
         height=result1['buy_mount'])
-plt.title("category_1类别销量")
-plt.show()
-# 由图可知，商品编号为28的销量最高，而50014815次之，而122650008的销量最低，应对此现状提高或减少生产量或者加大宣传力度。
-```
+   plt.title("category_1类别销量")
+   plt.show()
+   # 由图可知，商品编号为28的销量最高，而50014815次之，而122650008的销量最低，应对此现状提高或减少生产量或者加大宣传力度。
+   
+   ```
