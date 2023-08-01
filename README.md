@@ -4,7 +4,7 @@
 [tianchi_mum_baby.csv](https://github.com/YukaKazemi/taobao-mum-baby/blob/master/data/tianchi_mum_baby.csv)  
 [tianchi_mum_baby_trade_history.csv](https://github.com/YukaKazemi/taobao-mum-baby/blob/master/data/tianchi_mum_baby_trade_history.csv)  
 包含了953个孩子的的生日和性别数据和29971条淘宝用户的历史交易数据。   
-1.tianchi_mum_baby.csv  
+1. tianchi_mum_baby.csv  
 
 | 列 | 描述 |
 | ------ | ------ |  
@@ -12,7 +12,7 @@
 | birthday | Children’s birthday (e.g. 20130423). |  
 | gender | Children’s gender (“0” 女, “1” 男, “2” 未知). |  
 
-2.tianchi_mum_baby_trade_history.csv
+2. tianchi_mum_baby_trade_history.csv
 
 | 列 | 描述 |
 | ------ | ------ |  
@@ -22,4 +22,9 @@
 | category_2 | Category ID (Bigint). 类别ID |
 | category_1 | Root category ID (Bigint). 根类别ID |
 | buy_mount | Purchase quantity (Bigint). 采购量 |
-| day | Timestamp. |
+| day | Timestamp. |  
+
+3. 分析方向  
++什么商品类别销量最佳？  
++用户为之购买商品的婴儿年龄、性别分布？  
++销量与月份关系?  
