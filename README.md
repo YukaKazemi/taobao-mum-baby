@@ -152,4 +152,29 @@ tample.to_csv(r'../data/new_trade_history.csv')
 
     ![不同性别购买商品种类的关系](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/131e6a329b1a47ccc0f401d9a467d525c5f26ab6/tmp/%E4%B8%8D%E5%90%8C%E6%80%A7%E5%88%AB%E8%B4%AD%E4%B9%B0%E5%95%86%E5%93%81%E7%A7%8D%E7%B1%BB%E7%9A%84%E5%85%B3%E7%B3%BB.svg)  
    
-6. 销量与月份关系  
+5. 销量与月份关系
+   ``` python
+   # 销量与月份关系分析
+   # 分析波峰：在每年的10到11月份左右会有一个大波峰，每年的5月以及9月左右会有一个小波峰，在这段时间销量较同期会有一个明显的涨幅
+   # 推测1：节日因素，在5月有劳动节，母亲节；9月有中秋节；而是10月到11月左右有国庆节、万圣节、立冬、感恩节等节日，平台在这些节日可能绘有促销打折，这时随着价格降低需求    量会增加，同时销售量也会增加。
+   # 推测2：双十一打折力度高，淘宝双十一是从2009年开始便存在的大型购物促销狂欢日，而又伴随着即将到来的春节假期，顾客可能进行囤货，结合两个因素导致需求量大幅上升，所以   在11月前会出现一个大型的销量波峰。
+   # 结论：在5月与9月以及11月需要加大供货量，保证供需平衡。
+
+   # 分析波谷：每年的1月左右会出现一个明显的销量波谷，说明这段时间的销量较同期低。
+   # 推测：1月份正值春节，店铺休息，而开着的店铺肯定会抬高物价，而用户在11月进行囤货所以导致1月份的需求量减小，出现销量波谷。
+   # 结论：1月销量惨淡，需要考虑减少进货量的问题，适当降低物价拓宽销售渠道加大宣传力度。
+
+   mum_baby_trade_history["day"] = mum_baby_trade_history['day'].apply(
+       lambda x: datetime.datetime.strptime(str(x), "%Y%m%d"))
+   mum_baby_trade_history['Month'] = mum_baby_trade_history.day.astype('datetime64[M]')  # 设置成月份形式
+   print(mum_baby_trade_history)
+   data_month = mum_baby_trade_history.groupby('Month', as_index=False)  # 按月份分类
+   data_month.buy_mount.sum()  # 按月份汇总
+   df = data_month.buy_mount.sum()  # 新建汇总列表
+   plt.figure(figsize=(20, 5))
+   plt.plot(df["Month"], df["buy_mount"])
+   plt.savefig('../tmp/销量与月份走势图.svg')
+   plt.show()
+   ```
+   ![销量与月份关系](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/131e6a329b1a47ccc0f401d9a467d525c5f26ab6/tmp/%E4%B8%8D%E5%90%8C%E6%80%A7%E5%88%AB%E8%B4%AD%E4%B9%B0%E5%95%86%E5%93%81%E7%A7%8D%E7%B1%BB%E7%9A%84%E5%85%B3%E7%B3%BB.svg)  
+   
