@@ -150,6 +150,6 @@ tample.to_csv(r'../data/new_trade_history.csv')
    # 由图可知，已出生婴幼儿对编号50008168商品需求量较大，婴幼儿女孩对编号50014815需求量高于男孩，，而未出生购买50014815最高其他商品需求偏低，应对此现状提高或减少生产量或者加大宣传力度。
    ```
 
-    ![不同性别购买商品种类的关系](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/836c1644490ea6d0cce8b3febc852be88ba5415e/tmp/%E6%80%A7%E5%88%AB%E5%92%8C%E8%B4%AD%E4%B9%B0%E6%95%B0%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB.svg)  
+    ![不同性别购买商品种类的关系](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/131e6a329b1a47ccc0f401d9a467d525c5f26ab6/tmp/%E4%B8%8D%E5%90%8C%E6%80%A7%E5%88%AB%E8%B4%AD%E4%B9%B0%E5%95%86%E5%93%81%E7%A7%8D%E7%B1%BB%E7%9A%84%E5%85%B3%E7%B3%BB.svg)  
    
 6. 销量与月份关系  
