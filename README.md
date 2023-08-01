@@ -103,4 +103,5 @@ tample.to_csv(r'../data/new_trade_history.csv')
    # 由图可知，商品编号为28的销量最高，而50014815次之，而122650008的销量最低，应对此现状提高或减少生产量或者加大宣传力度。
    
    ```
-   [消费者行为分析图]:https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/cb8b7eeafcb952a93efe45843f5d3a381bd69e3d/tmp/%E6%B6%88%E8%B4%B9%E8%80%85%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90.svg
+   ![][消费者行为分析图]  
+   [消费者行为分析图]: https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/cb8b7eeafcb952a93efe45843f5d3a381bd69e3d/tmp/%E6%B6%88%E8%B4%B9%E8%80%85%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90.svg
