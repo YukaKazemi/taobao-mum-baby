@@ -10,7 +10,7 @@
 | ------ | ------ |  
 | user_id | 用户 ID (Bigint). |  
 | birthday | Children’s birthday (e.g. 20130423). |  
-| gender | Children’s gender (“0” 女, “1” 男, “2” 未知). |
+| gender | Children’s gender (“0” 女, “1” 男, “2” 未知). |  
 
 2.tianchi_mum_baby_trade_history.csv
 
