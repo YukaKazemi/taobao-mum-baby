@@ -105,3 +105,23 @@ tample.to_csv(r'../data/new_trade_history.csv')
    ```
 
    ![消费者行为分析图](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/cb8b7eeafcb952a93efe45843f5d3a381bd69e3d/tmp/%E6%B6%88%E8%B4%B9%E8%80%85%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90.svg)
+2. 不同性别用户的销售情况
+   ``` python
+   # 不同性别用户的销售情况分析
+   data = pd.pivot_table(trade_history, index='gender', values='buy_mount', aggfunc=np.sum)
+   print(data)
+   plt.figure(figsize=(5, 5))
+   plt.pie(['718', '544', '43'],
+        labels=['女', '男', '未知'],
+        colors=['r', 'b', 'g'],
+        autopct='%.2f%%')
+   plt.title("性别与购买数量的销售关系")
+   plt.savefig('../tmp/性别和购买数量的关系.svg')
+   plt.show()
+   # 由图可知，婴幼儿为女孩的销售量较女孩更大一些，而未出生购买商品的用户占比很小，所以应该加大用户家婴幼儿是女孩的推广力度以及产品制造。
+   ```
+
+   ![消费者行为分析图](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/cb8b7eeafcb952a93efe45843f5d3a381bd69e3d/tmp/%E6%B6%88%E8%B4%B9%E8%80%85%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90.svg)
+   
+4. 不同性别购买商品种类的关系  
+5. 销量与月份关系  
