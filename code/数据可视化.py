@@ -21,7 +21,9 @@ plt.figure(figsize=(7, 5))
 plt.bar(x=['28', '38', '50008168', '50014815', '50022520', '122650008'],
         height=result1['buy_mount'])
 plt.title("category_1类别销量")
+plt.savefig('../tmp/消费者行为分析.svg')
 plt.show()
+
 # 由图可知，商品编号为28的销量最高，而50014815次之，而122650008的销量最低，应对此现状提高或减少生产量或者加大宣传力度。
 
 
@@ -34,6 +36,7 @@ plt.pie(['718', '544', '43'],
         colors=['r', 'b', 'g'],
         autopct='%.2f%%')
 plt.title("性别与购买数量的销售关系")
+plt.savefig('../tmp/性别和购买数量的关系.svg')
 plt.show()
 # 由图可知，婴幼儿为女孩的销售量较女孩更大一些，而未出生购买商品的用户占比很小，所以应该加大用户家婴幼儿是女孩的推广力度以及产品制造。
 
@@ -57,6 +60,7 @@ plt.bar(x=['28', '38', '50008168', '50014815', '50022520', '122650008'],
         height=data[2], color='g')
 plt.xlabel("商品种类")
 plt.ylabel("销售数量")
+plt.savefig('../tmp/不同性别购买商品种类的关系.svg')
 plt.show()
 # 由图可知，已出生婴幼儿对编号50008168商品需求量较大，婴幼儿女孩对编号50014815需求量高于男孩，，而未出生购买50014815最高其他商品需求偏低，应对此现状提高或减少生产量或者加大宣传力度。。
 
@@ -80,5 +84,6 @@ data_month.buy_mount.sum()  # 按月份汇总
 df = data_month.buy_mount.sum()  # 新建汇总列表
 plt.figure(figsize=(20, 5))
 plt.plot(df["Month"], df["buy_mount"])
+plt.savefig('../tmp/销量与月份走势图.svg')
 plt.show()
 
