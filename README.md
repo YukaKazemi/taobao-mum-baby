@@ -103,7 +103,7 @@ tample.to_csv(r'../data/new_trade_history.csv')
    
    ```
 
-   ![消费者行为分析图](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/cb8b7eeafcb952a93efe45843f5d3a381bd69e3d/tmp/%E6%B6%88%E8%B4%B9%E8%80%85%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90.svg)
+   ![消费者行为分析图](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/cb8b7eeafcb952a93efe45843f5d3a381bd69e3d/tmp/%E6%B6%88%E8%B4%B9%E8%80%85%E8%A1%8C%E4%B8%BA%E5%88%86%E6%9E%90.svg)  
    由图可知，商品编号为28的销量最高，而50014815次之，而122650008的销量最低，应对此现状提高或减少生产量或者加大宣传力度。
    
 3. 不同性别用户的销售情况
@@ -121,7 +121,7 @@ tample.to_csv(r'../data/new_trade_history.csv')
    plt.show()  
    ```
 
-   ![不同性别用户的销售情况分析](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/836c1644490ea6d0cce8b3febc852be88ba5415e/tmp/%E6%80%A7%E5%88%AB%E5%92%8C%E8%B4%AD%E4%B9%B0%E6%95%B0%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB.svg)
+   ![不同性别用户的销售情况分析](https://raw.githubusercontent.com/YukaKazemi/taobao-mum-baby/836c1644490ea6d0cce8b3febc852be88ba5415e/tmp/%E6%80%A7%E5%88%AB%E5%92%8C%E8%B4%AD%E4%B9%B0%E6%95%B0%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB.svg)  
    由图可知，婴幼儿为女孩的销售量较女孩更大一些，而未出生购买商品的用户占比很小，所以应该加大用户家婴幼儿是女孩的推广力度以及产品制造。  
    
 4. 不同性别购买商品种类的关系
