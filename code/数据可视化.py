@@ -8,8 +8,7 @@ from matplotlib import pyplot as plt
 mpt.use('TkAgg')
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
-plt.rcParams['font.sans-serif'] = ['SimHei']
-plt.rcParams['axes.unicode_minus'] = False
+
 
 trade_history = pd.read_csv(r'../data/new_trade_history.csv')
 mum_baby_trade_history = pd.read_csv(r'../data/tianchi_mum_baby_trade_history.csv')
@@ -70,7 +69,7 @@ plt.show()
 # 推测1：节日因素，在5月有劳动节，母亲节；9月有中秋节；而是10月到11月左右有国庆节、万圣节、立冬、感恩节等节日，平台在这些节日可能绘有促销打折，这时随着价格降低需求量会增加，同时销售量也会增加。
 # 推测2：双十一打折力度高，淘宝双十一是从2009年开始便存在的大型购物促销狂欢日，而又伴随着即将到来的春节假期，顾客可能进行囤货，结合两个因素导致需求量大幅上升，所以在11月前会出现一个大型的销量波峰。
 # 结论：在5月与9月以及11月需要加大供货量，保证供需平衡。
-
+#
 # 分析波谷：每年的1月左右会出现一个明显的销量波谷，说明这段时间的销量较同期低。
 # 推测：1月份正值春节，店铺休息，而开着的店铺肯定会抬高物价，而用户在11月进行囤货所以导致1月份的需求量减小，出现销量波谷。
 # 结论：1月销量惨淡，需要考虑减少进货量的问题，适当降低物价拓宽销售渠道加大宣传力度。
